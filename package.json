@@ -1,17 +1,17 @@
 {
 	"name": "eslint-config-enderverse",
+	"version": "0.1.0",
 	"description": "ESLint shareable config for Enderverse",
 	"license": "UNLICENSED",
 	"author": {
 		"name": "Tyler Richards",
 		"email": "hello@tjrgg.xyz"
 	},
+	"repository": "Enderverse/eslint-config-enderverse",
 	"engines": {
 		"node": ">=10.0.0"
 	},
 	"main": "index.js",
-	"version": "0.1.0",
-	"repository": "Enderverse/eslint-config-enderverse",
 	"dependencies": {
 		"eslint": "^6.8.0",
 		"eslint-config-xo": "^0.29.0",
