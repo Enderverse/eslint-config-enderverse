@@ -2,7 +2,7 @@
 	"name": "eslint-config-enderverse",
 	"version": "0.2.0",
 	"description": "ESLint shareable config for Enderverse",
-	"license": "UNLICENSED",
+	"license": "MIT",
 	"author": {
 		"name": "Tyler Richards",
 		"email": "hello@tjrgg.xyz"
