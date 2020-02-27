@@ -3,7 +3,7 @@
 module.exports = {
 	env: { es6: true, node: true },
 	extends: [ 'xo' ],
-	plugins: [ 'security' ],
+	plugins: [ 'react', 'security' ],
 	rules: {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'arrow-parens': [ 'error', 'always' ],
