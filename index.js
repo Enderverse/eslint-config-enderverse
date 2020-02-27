@@ -11,6 +11,7 @@ module.exports = {
 		'capitalized-comments': 'off',
 		'curly': [ 'warn', 'multi-line' ],
 		'func-names': [ 'warn', 'as-needed' ],
+		'jsx-quotes': [ 'warn', 'prefer-single' ],
 		'linebreak-style': [ 'warn', 'unix' ],
 		'no-multiple-empty-lines': [ 'error', { 'max': 3 } ],
 		'no-negated-condition': 'off',
@@ -18,6 +19,16 @@ module.exports = {
 		'padded-blocks': [ 'error', { 'blocks': 'never', 'classes': 'always', 'switches': 'never' } ],
 		'quote-props': [ 'error', 'consistent' ],
 		'radix': [ 'error', 'as-needed' ],
+		'react/jsx-tag-spacing': [
+			'error',
+			{
+				closingSlash: 'never',
+				beforeSelfClosing: 'always',
+				afterOpening: 'never',
+				beforeClosing: 'never'
+			}
+		],
+		'react/react-in-jsx-scope': 'off',
 		'security/detect-buffer-noassert': 'warn',
 		'security/detect-child-process': 'error',
 		'security/detect-disable-mustache-escape': 'warn',
