@@ -5,7 +5,6 @@
 <p align="center">
 	<img alt="Issues" src="https://img.shields.io/github/issues/Enderverse/eslint-config-enderverse?cacheSeconds=86400" />
 	<img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/Enderverse/eslint-config-enderverse?cacheSeconds=86400" />
-	<img alt="Release" src="https://img.shields.io/github/v/release/Enderverse/eslint-config-enderverse?cacheSeconds=86400" />
 	<img alt="Size" src="https://img.shields.io/github/repo-size/Enderverse/eslint-config-enderverse?cacheSeconds=86400&label=size" />
 	<img alt="Version" src="https://img.shields.io/github/package-json/version/Enderverse/eslint-config-enderverse?cacheSeconds=86400&label=version" />
 
@@ -54,4 +53,4 @@ Add the following to your `.eslintrc` or `.eslintrc.json`:
 
 Copyright © 2020 TJR Enterprise, LLC and Tyler Richards.
 
-Use of the software and source code contained in this project is subject to the [MIT License](LICENSE.md).
+[MIT License](LICENSE.md).
