@@ -1,6 +1,4 @@
 <h1 align="center">
-	<img src="logo.png" />
-	<br />
 	eslint-config-enderverse
 </h1>
 
