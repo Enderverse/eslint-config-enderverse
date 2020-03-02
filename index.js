@@ -18,7 +18,7 @@ module.exports = {
 		'jsdoc/check-param-names': [ 'error' ],
 		'jsdoc/check-property-names': 'error',
 		'jsdoc/check-syntax': 'error',
-		'jsdoc/check-tag-names': [ 'error', { allowedTags: [ 'note' ] }],
+		'jsdoc/check-tag-names': [ 'error', { definedTags: [ 'note' ] }],
 		'jsdoc/check-types': [ 'warn' ],
 		'jsdoc/check-values': [ 'warn' ],
 		'jsdoc/empty-tags': [ 'error' ],
