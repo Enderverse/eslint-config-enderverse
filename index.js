@@ -13,7 +13,7 @@ module.exports = {
 		'func-names': [ 'warn', 'as-needed' ],
 		'jsdoc/check-access': 'error',
 		'jsdoc/check-alignment': 'error',
-		'jsdoc/check-examples': [ 'error' ],
+		'jsdoc/check-examples': 'off',
 		'jsdoc/check-indentation': [ 'error', { excludeTags: [ 'example' ] } ],
 		'jsdoc/check-param-names': [ 'error' ],
 		'jsdoc/check-property-names': 'error',
