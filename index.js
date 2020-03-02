@@ -3,14 +3,48 @@
 module.exports = {
 	env: { es6: true, node: true },
 	extends: [ 'xo', 'xo-react' ],
-	plugins: [ 'react', 'react-hooks', 'security' ],
+	plugins: [ 'jsdoc', 'react', 'react-hooks', 'security' ],
 	rules: {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'arrow-parens': [ 'error', 'always' ],
-		'brace-style': [ 'error', 'stroustrup', { 'allowSingleLine': true } ],
+		'brace-style': [ 'error', 'stroustrup', { allowSingleLine: true } ],
 		'capitalized-comments': 'off',
 		'curly': [ 'warn', 'multi-line' ],
 		'func-names': [ 'warn', 'as-needed' ],
+		'jsdoc/check-access': 'error',
+		'jsdoc/check-alignment': 'error',
+		'jsdoc/check-examples': [ 'error' ],
+		'jsdoc/check-indentation': [ 'error', { excludeTags: [ 'example' ] } ],
+		'jsdoc/check-param-names': [ 'error' ],
+		'jsdoc/check-property-names': 'error',
+		'jsdoc/check-syntax': 'error',
+		'jsdoc/check-tag-names': [ 'error', { allowedTags: [ 'note' ] }],
+		'jsdoc/check-types': [ 'warn' ],
+		'jsdoc/check-values': [ 'warn' ],
+		'jsdoc/empty-tags': [ 'error' ],
+		'jsdoc/implements-on-classes': [ 'error' ],
+		'jsdoc/match-description': [ 'warn' ],
+		'jsdoc/newline-after-description': [ 'error', 'never' ],
+		'jsdoc/no-types': 'off',
+		'jsdoc/no-undefined-types': [ 'warn' ],
+		'jsdoc/require-description': [ 'error', { exemptedBy: [ 'type' ] } ],
+		'jsdoc/require-description-complete-sentence': [ 'error' ],
+		'jsdoc/require-example': [ 'warn', { exemptedBy: [ 'private', 'type' ] } ],
+		'jsdoc/require-file-overview': [ 'error', { tags: { file: { initialCommentsOnly: true, mustExist: true, preventDuplicates: true } } } ],
+		'jsdoc/require-hyphen-before-param-description': [ 'warn', 'always', { checkProperties: true } ],
+		'jsdoc/require-jsdoc': [ 'error', { exemptEmptyFunctions: true, publicOnly: true } ],
+		'jsdoc/require-param': [ 'error' ],
+		'jsdoc/require-param-description': [ 'warn' ],
+		'jsdoc/require-param-name': [ 'error' ],
+		'jsdoc/require-param-type': [ 'error' ],
+		'jsdoc/require-property-description': [ 'warn' ],
+		'jsdoc/require-property-name': [ 'error' ],
+		'jsdoc/require-property-type': [ 'error' ],
+		'jsdoc/require-returns': [ 'error', { exemptedBy: [ 'type' ] } ],
+		'jsdoc/require-returns-check': 'error',
+		'jsdoc/require-returns-description': [ 'warn' ],
+		'jsdoc/require-returns-type': [ 'error' ],
+		'jsdoc/valid-types': [ 'warn' ],
 		'jsx-quotes': [ 'warn', 'prefer-single' ],
 		'linebreak-style': [ 'warn', 'unix' ],
 		'no-multiple-empty-lines': [ 'error', { 'max': 3 } ],
@@ -42,6 +76,16 @@ module.exports = {
 		'security/detect-possible-timing-attacks': 'warn',
 		'security/detect-pseudoRandomBytes': 'warn',
 		'security/detect-unsafe-regex': 'warn',
-		'unicorn/filename-case': [ 'error', { 'cases': { 'camelCase': true, 'kebabCase': true, 'pascalCase': true } } ]
+		'unicorn/filename-case': [ 'error', { 'cases': { camelCase: true, kebabCase: true, pascalCase: true } } ]
+	},
+	settings: {
+		jsdoc: {
+			ignorePrivate: true,
+			tagNamePreference: {
+				'augments': 'extends',
+				'file': 'overview',
+				'fires': 'emits'
+			}
+		}
 	}
 };
