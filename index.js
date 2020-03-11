@@ -30,7 +30,7 @@ module.exports = {
 		'jsdoc/require-description': [ 'error', { exemptedBy: [ 'type' ] } ],
 		'jsdoc/require-description-complete-sentence': [ 'error' ],
 		'jsdoc/require-example': [ 'warn', { exemptedBy: [ 'private', 'type' ] } ],
-		'jsdoc/require-file-overview': [ 'error', { tags: { file: { initialCommentsOnly: true, mustExist: true, preventDuplicates: true } } } ],
+		'jsdoc/require-file-overview': [ 'off', { tags: { file: { initialCommentsOnly: true, mustExist: true, preventDuplicates: true } } } ],
 		'jsdoc/require-hyphen-before-param-description': [ 'warn', 'always', { checkProperties: true } ],
 		'jsdoc/require-jsdoc': [ 'error', { exemptEmptyFunctions: true, publicOnly: true } ],
 		'jsdoc/require-param': [ 'error' ],
