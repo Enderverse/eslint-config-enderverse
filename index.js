@@ -76,7 +76,9 @@ module.exports = {
 		'security/detect-possible-timing-attacks': 'warn',
 		'security/detect-pseudoRandomBytes': 'warn',
 		'security/detect-unsafe-regex': 'warn',
-		'unicorn/filename-case': [ 'error', { 'cases': { camelCase: true, kebabCase: true, pascalCase: true } } ]
+		'unicorn/filename-case': [ 'error', { 'cases': { camelCase: true, kebabCase: true, pascalCase: true } } ],
+		'@typescript-eslint/brace-style': 'off',
+		'@typescript-eslint/indent': 'off'
 	},
 	settings: {
 		jsdoc: {
