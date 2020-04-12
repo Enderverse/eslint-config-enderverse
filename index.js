@@ -85,8 +85,11 @@ module.exports = {
 			ignorePrivate: true,
 			tagNamePreference: {
 				'augments': 'extends',
+				'const': 'const',
+				'constructor': 'constructor',
 				'file': 'overview',
-				'fires': 'emits'
+				'fires': 'emits',
+				'method': 'method'
 			}
 		}
 	}
