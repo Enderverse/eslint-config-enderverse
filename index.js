@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	env: { es6: true, node: true },
+	env: { es2020: true, node: true },
 	extends: [ 'xo', 'xo-react' ],
 	plugins: [ 'jsdoc', 'react', 'react-hooks', 'security' ],
 	rules: {
@@ -53,15 +53,7 @@ module.exports = {
 		'padded-blocks': [ 'error', { 'blocks': 'never', 'classes': 'always', 'switches': 'never' } ],
 		'quote-props': [ 'error', 'consistent' ],
 		'radix': [ 'error', 'as-needed' ],
-		'react/jsx-tag-spacing': [
-			'error',
-			{
-				closingSlash: 'never',
-				beforeSelfClosing: 'always',
-				afterOpening: 'never',
-				beforeClosing: 'never'
-			}
-		],
+		'react/jsx-tag-spacing': [ 'error', { closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never', beforeClosing: 'never' } ],
 		'react/react-in-jsx-scope': 'off',
 		'security/detect-buffer-noassert': 'warn',
 		'security/detect-child-process': 'error',
