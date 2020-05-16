@@ -14,13 +14,5 @@
 	"main": "index.js",
 	"scripts": {
 		"postversion": "git push && git push --tags"
-	},
-	"dependencies": {
-		"eslint-config-xo": "^0.29.0",
-		"eslint-config-xo-react": "^0.23.0",
-		"eslint-plugin-jsdoc": "^24.0.6",
-		"eslint-plugin-react": "^7.19.0",
-		"eslint-plugin-react-hooks": "^4.0.0",
-		"eslint-plugin-security": "^1.4.0"
 	}
 }
