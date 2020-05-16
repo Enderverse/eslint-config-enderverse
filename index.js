@@ -2,8 +2,6 @@
 
 module.exports = {
 	env: { es2020: true, node: true },
-	extends: [ 'xo', 'xo-react' ],
-	plugins: [ 'jsdoc', 'react', 'react-hooks', 'security' ],
 	rules: {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'arrow-parens': [ 'error', 'always' ],
