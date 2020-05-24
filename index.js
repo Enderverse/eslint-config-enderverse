@@ -5,6 +5,7 @@ module.exports = {
 		es2020: true,
 		node: true
 	},
+	extends: [ 'xo' ],
 	parserOptions: {
 		ecmaVersion: 2020,
 		sourceType: 'module'
