@@ -6,6 +6,9 @@ module.exports = {
 		node: true
 	},
 	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		},
 		ecmaVersion: 2020,
 		sourceType: 'module'
 	},
