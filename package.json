@@ -14,5 +14,14 @@
 	"main": "index.js",
 	"scripts": {
 		"postversion": "git push && git push --tags"
+	},
+	"dependencies": {
+		"eslint-config-xo": "^0.29.1",
+		"eslint-plugin-unicorn": "^20.0.0"
+	},
+	"peerDependencies": {
+		"eslint-plugin-jsdoc": "^25.4.2",
+		"eslint-plugin-react": "^7.20.0",
+		"eslint-plugin-security": "^1.4.0"
 	}
 }
