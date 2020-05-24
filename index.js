@@ -1,7 +1,15 @@
 'use strict';
 
 module.exports = {
-	env: { es2020: true, node: true },
+	env: {
+		es2020: true,
+		node: true
+	},
+	parserOptions: {
+		ecmaVersion: 2020,
+		sourceType: 'module'
+	},
+	plugins: [ 'unicorn' ],
 	rules: {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'arrow-parens': [ 'error', 'always' ],
@@ -9,40 +17,6 @@ module.exports = {
 		'capitalized-comments': 'off',
 		'curly': [ 'warn', 'multi-line' ],
 		'func-names': [ 'warn', 'as-needed' ],
-		'jsdoc/check-access': 'error',
-		'jsdoc/check-alignment': 'error',
-		'jsdoc/check-examples': 'off',
-		'jsdoc/check-indentation': [ 'error', { excludeTags: [ 'example' ] } ],
-		'jsdoc/check-param-names': [ 'error' ],
-		'jsdoc/check-property-names': 'error',
-		'jsdoc/check-syntax': 'error',
-		'jsdoc/check-tag-names': [ 'error', { definedTags: [ 'note' ] }],
-		'jsdoc/check-types': [ 'warn' ],
-		'jsdoc/check-values': [ 'warn' ],
-		'jsdoc/empty-tags': [ 'error' ],
-		'jsdoc/implements-on-classes': [ 'error' ],
-		'jsdoc/match-description': [ 'warn' ],
-		'jsdoc/newline-after-description': [ 'error', 'never' ],
-		'jsdoc/no-types': 'off',
-		'jsdoc/no-undefined-types': [ 'warn' ],
-		'jsdoc/require-description': [ 'error', { exemptedBy: [ 'type' ] } ],
-		'jsdoc/require-description-complete-sentence': [ 'error' ],
-		'jsdoc/require-example': [ 'off', { exemptedBy: [ 'private', 'type' ] } ],
-		'jsdoc/require-file-overview': [ 'off', { tags: { file: { initialCommentsOnly: true, mustExist: false, preventDuplicates: true } } } ],
-		'jsdoc/require-hyphen-before-param-description': [ 'warn', 'always', { checkProperties: true } ],
-		'jsdoc/require-jsdoc': [ 'error', { exemptEmptyFunctions: true, publicOnly: true } ],
-		'jsdoc/require-param': [ 'error' ],
-		'jsdoc/require-param-description': [ 'warn' ],
-		'jsdoc/require-param-name': [ 'error' ],
-		'jsdoc/require-param-type': [ 'error' ],
-		'jsdoc/require-property-description': [ 'warn' ],
-		'jsdoc/require-property-name': [ 'error' ],
-		'jsdoc/require-property-type': [ 'error' ],
-		'jsdoc/require-returns': [ 'error', { exemptedBy: [ 'type' ] } ],
-		'jsdoc/require-returns-check': 'error',
-		'jsdoc/require-returns-description': [ 'warn' ],
-		'jsdoc/require-returns-type': [ 'error' ],
-		'jsdoc/valid-types': [ 'warn' ],
 		'jsx-quotes': [ 'warn', 'prefer-single' ],
 		'linebreak-style': [ 'warn', 'unix' ],
 		'no-multiple-empty-lines': [ 'error', { 'max': 3 } ],
@@ -51,36 +25,8 @@ module.exports = {
 		'padded-blocks': [ 'error', { 'blocks': 'never', 'classes': 'always', 'switches': 'never' } ],
 		'quote-props': [ 'error', 'consistent' ],
 		'radix': [ 'error', 'as-needed' ],
-		'react/jsx-tag-spacing': [ 'error', { closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never', beforeClosing: 'never' } ],
-		'react/react-in-jsx-scope': 'off',
-		'security/detect-buffer-noassert': 'warn',
-		'security/detect-child-process': 'error',
-		'security/detect-disable-mustache-escape': 'warn',
-		'security/detect-eval-with-expression': 'error',
-		'security/detect-new-buffer': 'warn',
-		'security/detect-no-csrf-before-method-override': 'warn',
-		'security/detect-non-literal-fs-filename': 'warn',
-		'security/detect-non-literal-regexp': 'warn',
-		'security/detect-non-literal-require': 'warn',
-		'security/detect-object-injection': 'warn',
-		'security/detect-possible-timing-attacks': 'warn',
-		'security/detect-pseudoRandomBytes': 'warn',
-		'security/detect-unsafe-regex': 'warn',
 		'unicorn/filename-case': [ 'error', { 'cases': { camelCase: true, kebabCase: true, pascalCase: true } } ],
-		'@typescript-eslint/brace-style': 'off',
-		'@typescript-eslint/indent': 'off'
-	},
-	settings: {
-		jsdoc: {
-			ignorePrivate: true,
-			tagNamePreference: {
-				'augments': 'extends',
-				'const': 'const',
-				'constructor': 'constructor',
-				'file': 'overview',
-				'fires': 'emits',
-				'method': 'method'
-			}
-		}
+		'unicorn/no-null': 'off',
+		'unicorn/prevent-abbreviations': 'off'
 	}
 };
