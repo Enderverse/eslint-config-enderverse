@@ -7,7 +7,7 @@
 		"name": "Tyler Richards",
 		"email": "hello@tjrgg.xyz"
 	},
-	"repository": "enderverse/eslint-config-enderverse",
+	"repository": "enderverse/eslint-config",
 	"engines": {
 		"node": ">=10.0.0"
 	},
