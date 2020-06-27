@@ -16,7 +16,7 @@
 		"postversion": "git push && git push --tags"
 	},
 	"dependencies": {
-		"eslint-config-xo": "^0.29.1",
+		"eslint-config-xo": "^0.31.0",
 		"eslint-plugin-unicorn": "^20.0.0"
 	},
 	"peerDependencies": {
