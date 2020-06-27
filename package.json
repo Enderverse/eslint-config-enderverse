@@ -1,6 +1,6 @@
 {
 	"name": "@enderverse/eslint-config",
-	"version": "0.13.0",
+	"version": "0.13.1",
 	"description": "ESLint shareable config for Enderverse",
 	"license": "MIT",
 	"author": {
